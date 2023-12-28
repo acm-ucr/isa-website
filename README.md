@@ -11,7 +11,7 @@
 
 ## Figma
 
-[ISA Website Template Figma Design File](https://www.figma.com/)
+[ISA Website Template Figma Design File](https://www.figma.com/file/9JJaYuB5Td4XqcbrScyFLi/ISA-Website?type=design&node-id=66%3A2&mode=design&t=fG9oxE9alh2geNwi-1)
 
 ## Node.js
 
