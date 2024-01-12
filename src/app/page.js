@@ -1,6 +1,5 @@
-import Board from "@/components/board/Board";
 const Home = () => {
-  return <Board name="Marco" position="President" />;
+  return <>Hello World</>;
 };
 
 export default Home;
