@@ -1,6 +1,8 @@
 /* eslint-disable new-cap */
 import "./globals.css";
 import { Nunito } from "next/font/google";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navigation from "@/components/Navigation.jsx";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -18,6 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={nunito.className}>{children}</body>
+      <Navigation />
     </html>
   );
 }
