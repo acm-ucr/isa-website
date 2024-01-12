@@ -18,6 +18,9 @@ module.exports = {
           "yellow-200": "#FFA824",
         },
       },
+      boxShadow: {
+        inner: "inset 0 0px 2px rgba(0,0,0,0.6)",
+      },
     },
   },
   plugins: [],
