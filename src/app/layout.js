@@ -1,5 +1,6 @@
 /* eslint-disable new-cap */
 import "./globals.css";
+import Footer from "@/components/Footer";
 import { Nunito } from "next/font/google";
 
 const nunito = Nunito({
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={nunito.className}>{children}</body>
+      <Footer />
     </html>
   );
 }
