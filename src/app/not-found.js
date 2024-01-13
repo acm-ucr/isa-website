@@ -1,12 +1,5 @@
-import Button from "@/components/Button";
-
 const NotFound = () => {
-  return (
-    <div>
-      404 Page Not Found
-      <Button text={"Back To Home Page"} link={"/"} />
-    </div>
-  );
+  return <div>404 Page Not Found</div>;
 };
 
 export default NotFound;
