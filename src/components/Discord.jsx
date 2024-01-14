@@ -1,6 +1,6 @@
 const Discord = ({ text, name }) => {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-column">
       <div>Hello</div>
       <div>World</div>
     </div>
