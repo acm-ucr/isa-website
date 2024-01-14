@@ -1,5 +1,6 @@
 /* eslint-disable new-cap */
 import "./globals.css";
+import Footer from "@/components/Footer";
 import { Nunito } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "@/components/Navigation.jsx";
@@ -19,8 +20,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>{children}</body>
-      <Navigation />
+      <body className={nunito.className}>
+        <Navigation />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
