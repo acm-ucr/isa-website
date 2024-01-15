@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import moment from "moment";
+import "react-big-calendar/lib/css/react-big-calendar.css";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import { useState } from "react";
 
@@ -24,17 +25,23 @@ const CalendarEvents = () => {
     },
   ];
   return (
-    <Calendar
-      className="text-3xl"
-      date={date}
-      events={dummyEvents}
-      localizer={mLocalizer}
-      defaultView="month"
-      views={["month"]}
-      onNavigate={(newDate) => {
-        setDate(newDate);
-      }}
-    />
+    <section className="w-full flex justify-center items-center flex-col">
+      <div className="mb-5 w-11/12 flex justify-center items-center">
+        <div className="h-[110vh] w-full relative">
+          <Calendar
+            className="w-full m-0 p-0 text-3xl"
+            date={date}
+            onNavigate={(newDate) => {
+              setDate(newDate);
+            }}
+            events={dummyEvents}
+            localizer={mLocalizer}
+            defaultView="month"
+            views={["month"]}
+          />
+        </div>
+      </div>
+    </section>
   );
 };
 
