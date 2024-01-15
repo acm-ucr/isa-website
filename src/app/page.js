@@ -1,5 +1,7 @@
+import Title from "@/components/title";
+
 const Home = () => {
-  return <>Hello World</>;
+  return <Title text="Our core valss" />;
 };
 
 export default Home;
