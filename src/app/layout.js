@@ -2,6 +2,8 @@
 import "./globals.css";
 import Footer from "@/components/Footer";
 import { Nunito } from "next/font/google";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navigation from "@/components/Navigation.jsx";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -19,6 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={nunito.className}>
+        <Navigation />
         {children}
         <Footer />
       </body>
