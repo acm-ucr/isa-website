@@ -1,5 +1,12 @@
+import Title from "@/components/title";
+
 const Home = () => {
-  return <div>Hello World!</div>;
+  return (
+    <div>
+      <Title text="Hiii" />
+      Hello World!!
+    </div>
+  );
 };
 
 export default Home;
