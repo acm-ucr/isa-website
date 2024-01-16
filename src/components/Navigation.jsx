@@ -1,35 +1,50 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
-import Logo from "./assets/blue-yellow-logo.png";
+import Image from "next/image";
+import Logo from "../../public/images/navlogo.webp";
 import { items } from "@/data/nav";
 
 const Navigation = () => {
+  const [isSpanVisible, setIsSpanVisible] = useState(false);
+
+  const handleClick = () => {
+    setIsSpanVisible(!isSpanVisible);
+  };
+
   return (
-    <Navbar className="w-full bg-gradient-to-r from-isa-blue-200 to-isa-blue-100">
+    <Navbar className="w-full p-4 bg-gradient-to-r from-isa-blue-200 to-isa-blue-100">
       <Navbar.Brand>
         <Link href="/">
-          <div className="flex">
-            <img src={Logo} />
+          <div className="flex items-center font-bold text-3xl space-x-3">
+            <Image src={Logo} alt="ISA icon" className="h-[45px] w-[45px]" />
             <div className="text-white">UCR ISA</div>
           </div>
         </Link>
       </Navbar.Brand>
-      <Nav className="ml-auto">
+      <Nav className="ml-auto space-x-24">
         {items.map((item, index) => (
-          <Nav.Link as={Link} key={index} href={item.link} pathname={item.name}>
-            <div className="text-white hover:text-isa-yellow-100">
-              {item.name}
-            </div>
+          <Nav.Link
+            as={Link}
+            key={index}
+            href={item.link}
+            pathname={item.name}
+            className="hover:text-isa-yellow-100 text-3xl text-white"
+            onClick={handleClick}
+          >
+            {item.name}
+            {isSpanVisible && (
+              <span className="bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100"></span>
+            )}
           </Nav.Link>
         ))}
 
-        <Nav.Link>
-          <div className="flex justify-center items-center text-white w-20 rounded-full w-full h-7 bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100">
+        <Nav.Link className="flex justify-center items-center text-white text-3xl text-bold w-44 h-11 rounded-full bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100">
+          <Link href="\" className="drop-shadow-2xl">
             JOIN
-          </div>
+          </Link>
         </Nav.Link>
       </Nav>
     </Navbar>
