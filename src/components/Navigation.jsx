@@ -1,18 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/images/navlogo.webp";
+import { usePathname } from "next/navigation";
 import { items } from "@/data/nav";
+import { FaMinus } from "react-icons/fa6";
 
 const Navigation = () => {
-  const [isSpanVisible, setIsSpanVisible] = useState(false);
-
-  const handleClick = () => {
-    setIsSpanVisible(!isSpanVisible);
-  };
+  const pathname = usePathname().slice(1);
 
   return (
     <Navbar className="w-full p-4 bg-gradient-to-r from-isa-blue-200 to-isa-blue-100">
@@ -30,21 +28,22 @@ const Navigation = () => {
             as={Link}
             key={index}
             href={item.link}
-            pathname={item.name}
-            className="hover:text-isa-yellow-100 text-3xl text-white"
-            onClick={handleClick}
+            className="flex flex-col items-center hover:!text-isa-yellow-100 text-3xl font-bold text-white"
           >
             {item.name}
-            {isSpanVisible && (
-              <span className="bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100"></span>
-            )}
+            <div className="flex justify-center absolute bottom-1">
+              {pathname === item.name && (
+                <FaMinus className="text-isa-yellow-200" />
+              )}
+            </div>
           </Nav.Link>
         ))}
 
-        <Nav.Link className="flex justify-center items-center text-white text-3xl text-bold w-44 h-11 rounded-full bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100">
-          <Link href="\" className="drop-shadow-2xl">
-            JOIN
-          </Link>
+        <Nav.Link
+          href="\"
+          className="flex justify-center items-center text-white text-3xl font-bold w-44 h-11 rounded-full bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100"
+        >
+          JOIN
         </Nav.Link>
       </Nav>
     </Navbar>
