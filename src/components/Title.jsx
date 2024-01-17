@@ -3,7 +3,7 @@ import { PiStarFourFill } from "react-icons/pi";
 
 const Title = ({ text }) => {
   return (
-    <div className="flex-col flex items-center relative">
+    <div className="flex-col flex items-center">
       <div className="text-isa-yellow-200 text-center font-extrabold text-4xl">
         {text}
       </div>
