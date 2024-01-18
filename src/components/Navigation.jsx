@@ -43,7 +43,7 @@ const Navigation = () => {
               className="flex flex-col items-center hover:!text-isa-yellow-100 text-3xl font-bold text-white ml-7 mr-7"
             >
               {item.name}
-              <div className="flex justify-center absolute bottom-1">
+              <div className="flex justify-center md:absolute bottom-1 h-1">
                 {pathname === item.name && (
                   <FaMinus className="text-isa-yellow-200" />
                 )}
