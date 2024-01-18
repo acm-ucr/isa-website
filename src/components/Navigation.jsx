@@ -33,14 +33,14 @@ const Navigation = () => {
       >
         <FaBars className="text-white text-2xl" />
       </Navbar.Toggle>
-      <Navbar.Collapse className="">
-        <Nav className="ml-auto flex items-center space-x-10">
+      <Navbar.Collapse className="justify-center items-end">
+        <Nav className="ml-auto flex items-center">
           {items.map((item, index) => (
             <Nav.Link
               as={Link}
               key={index}
               href={item.link}
-              className="flex flex-col items-center hover:!text-isa-yellow-100 text-3xl font-bold text-white"
+              className="flex flex-col items-center hover:!text-isa-yellow-100 text-3xl font-bold text-white ml-7 mr-7"
             >
               {item.name}
               <div className="flex justify-center absolute bottom-1">
