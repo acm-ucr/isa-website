@@ -1,5 +1,5 @@
 import Sky from "@/public/assets/sky.svg";
-import Building from "@/public/images/building.png";
+import Building from "@/public/images/building.webp";
 import { FaMapPin } from "react-icons/fa";
 import Button from "@/components/Button";
 import Image from "next/image";
