@@ -6,18 +6,16 @@ import Image from "next/image";
 
 const Landing = () => {
   return (
-    <div className=" flex items-center justify-center h-screen">
-      <div className="">
-        <Image src={Sky} alt="Picture of sky" fill={true} className="" />
-      </div>
+    <div className="relative flex items-center justify-center h-screen mt-5 ">
+      <Image src={Sky} alt="Picture of sky" fill={true} className="" />
 
       <Image
         src={Building}
         alt="Picture of building"
-        className="relative z-10 h-2/3 w-2/3 top-[20%]"
+        className="relative z-10 h-2/3 w-2/3 top-[22%]"
       />
 
-      <div className="absolute z-20 text-isa-white text-6xl font-bold top-0 mt-24 flex flex-col items-center justify-center mb-4">
+      <div className="absolute z-20 text-isa-white text-6xl font-bold top-0 mt-24 flex flex-col items-center justify-center">
         Indian Student Association
         <div className="text-isa-white text-3xl flex flex-row">
           <FaMapPin className="mr-5" />
