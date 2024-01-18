@@ -13,7 +13,7 @@ const Navigation = () => {
   const pathname = usePathname().slice(1);
 
   return (
-    <Navbar className="w-full p-4 bg-gradient-to-r from-isa-blue-200 to-isa-blue-100">
+    <Navbar className="w-full p-2 bg-gradient-to-r from-isa-blue-200 to-isa-blue-100">
       <Navbar.Brand>
         <Link href="/">
           <div className="flex items-center font-bold text-3xl space-x-3">
