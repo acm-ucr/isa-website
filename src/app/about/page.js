@@ -6,7 +6,11 @@ import { sections } from "@/data/aboutSections/sections.js";
 const About = () => {
   return (
     <div>
-      <Image src={Logo} className="py-8 mx-auto h-[400px] w-[400px]" />
+      <Image
+        src={Logo}
+        alt="ISA Icon"
+        className="py-8 mx-auto h-[400px] w-[400px]"
+      />
       {sections.map((section, index) => (
         <div
           key={index}
