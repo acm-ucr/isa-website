@@ -1,21 +1,18 @@
-import Sky from "@/public/assets/sky.svg";
-import Building from "@/public/images/building.webp";
+import LandingImage from "@/public/images/landing.webp";
 import { FaMapPin } from "react-icons/fa";
 import Button from "@/components/Button";
 import Image from "next/image";
 
 const Landing = () => {
   return (
-    <div className="relative flex items-center justify-center h-screen my-10 ">
-      <Image src={Sky} alt="Picture of sky" fill={true} />
-
+    <div className="relative flex items-center justify-center h-screen">
       <Image
-        src={Building}
-        alt="Picture of building"
-        className="relative z-10 top-[22%] scale-110"
+        src={LandingImage}
+        alt="Landing Picture"
+        className="absolute top-0 scale-90"
       />
 
-      <div className="absolute z-20 text-isa-white text-6xl font-bold top-0 mt-24 flex flex-col items-center justify-center">
+      <div className="absolute z-20 text-isa-white text-nowrap scale-50 md:scale-90 sm:text-5xl xl:text-6xl font-bold top-5 md:top-20 md:mt-24 flex flex-col items-center justify-center">
         Indian Student Association
         <div className="text-isa-white text-3xl flex flex-row">
           <FaMapPin className="mr-5" />
