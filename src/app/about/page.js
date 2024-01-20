@@ -1,7 +1,7 @@
 "use client";
 import Logo from "../../../public/assets/logo.svg";
 import Image from "next/image";
-import { sections } from "@/data/aboutSections/sections.js";
+import { sections } from "@/data/aboutSections/Sections.js";
 
 const About = () => {
   return (
