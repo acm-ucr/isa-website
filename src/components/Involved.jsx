@@ -5,7 +5,7 @@ import Title from "@/components/Title";
 const Involved = () => {
   return (
     <div>
-      <Title text={"Get Involved"} />
+      <Title text="Get Involved" />
       <div className="flex justify-content-center">
         {SOCIALS.map((social, index) => {
           return (
@@ -14,7 +14,7 @@ const Involved = () => {
               text={social.name}
               link={social.link}
               icon={social.icon}
-            ></Social>
+            />
           );
         })}
       </div>

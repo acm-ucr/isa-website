@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-const Icon = ({ icon, text, link }) => {
+const Social = ({ icon, text, link }) => {
   return (
     <Link
-      className="flex flex-col cursor-pointer h-25 text-isa-yellow-200 items-center m-2.5"
+      className="flex flex-col cursor-pointer h-25 text-isa-yellow-200 items-center m-4"
       href={link}
       target="_blank"
     >
@@ -16,4 +16,4 @@ const Icon = ({ icon, text, link }) => {
   );
 };
 
-export default Icon;
+export default Social;
