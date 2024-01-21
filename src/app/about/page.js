@@ -5,7 +5,7 @@ import { sections } from "@/data/about/Sections.js";
 
 const About = () => {
   return (
-    <div>
+    <div className="pb-56">
       <Image
         src={Logo}
         alt="ISA Icon"
@@ -20,7 +20,6 @@ const About = () => {
           <div className="text-2xl">{section.description}</div>
         </div>
       ))}
-      <div className="pb-56"></div>
     </div>
   );
 };
