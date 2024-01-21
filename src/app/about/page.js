@@ -1,7 +1,7 @@
 "use client";
 import Logo from "../../../public/assets/logo.svg";
 import Image from "next/image";
-import { sections } from "@/data/aboutSections/Sections.js";
+import { sections } from "@/data/about/Sections.js";
 
 const About = () => {
   return (
@@ -20,6 +20,7 @@ const About = () => {
           <div className="text-2xl">{section.description}</div>
         </div>
       ))}
+      <div className="pb-56"></div>
     </div>
   );
 };
