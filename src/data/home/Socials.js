@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
-const className = "text-5xl isa-yellow-200";
+const className = "text-7xl isa-yellow-200";
 
 export const SOCIALS = [
   {
