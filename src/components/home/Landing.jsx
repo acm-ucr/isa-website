@@ -12,7 +12,7 @@ const Landing = () => {
         className="absolute top-0 scale-90"
       />
 
-      <div className="absolute z-20 text-isa-white text-nowrap scale-50 md:scale-90 sm:text-5xl xl:text-6xl font-bold top-5 md:top-20 md:mt-24 flex flex-col items-center justify-center">
+      <div className="absolute z-20 text-isa-white text-nowrap scale-50 md:scale-90 text-5xl lg:text-6xl font-bold top-5 md:top-20 md:mt-24 flex flex-col items-center justify-center">
         Indian Student Association
         <div className="text-isa-white text-3xl flex flex-row">
           <FaMapPin className="mr-5" />
