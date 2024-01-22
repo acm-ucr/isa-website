@@ -1,12 +1,7 @@
 const CustomEvent = ({ event }) => {
   return (
-    <div className={`font-nunito ${event.color} text-sm flex justify-start`}>
-      <p className="whitespace-nowrap m-0">
-        {!event.allDay &&
-          new Date(event.start).toLocaleTimeString(navigator.language, {})}
-        &nbsp;
-        {event.summary}
-      </p>
+    <div className="font-nunito bg-isa-yellow-100 text-sm text-center">
+      <p className="whitespace-nowrap m-0">{event.title}</p>
     </div>
   );
 };

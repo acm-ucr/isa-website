@@ -14,19 +14,17 @@ const CalendarEvents = () => {
   const dummyEvents = [
     {
       title: "Meeting with Team",
-      start: new Date(2024, 1, 20, 10, 0),
-      end: new Date(2024, 1, 20, 11, 0),
+      start: new Date(2024, 0, 24, 10, 0),
+      end: new Date(2024, 0, 24, 11, 0),
       location: "WCH",
       summary: "nice event",
-      color: "isa-yellow-100",
     },
     {
       title: "Lunch Break",
-      start: new Date(2024, 2, 20, 10, 0),
-      end: new Date(2024, 2, 20, 11, 0),
+      start: new Date(2024, 1, 20, 10, 0),
+      end: new Date(2024, 1, 20, 11, 0),
       location: "WCH",
       summary: "lit event",
-      color: "isa-yellow-100",
     },
   ];
   return (
