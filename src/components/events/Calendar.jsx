@@ -4,6 +4,9 @@ import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import { useState } from "react";
+import CustomToolbar from "./CustomToolbar";
+import CustomHeader from "./CustomHeader";
+import CustomEvent from "./CustomEvent";
 
 const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
@@ -11,15 +14,15 @@ const CalendarEvents = () => {
   const dummyEvents = [
     {
       title: "Meeting with Team",
-      start: new Date(2024, 1, 20, 10, 0),
-      end: new Date(2024, 1, 5, 11, 0),
+      start: new Date(2024, 0, 24, 10, 0),
+      end: new Date(2024, 0, 24, 11, 0),
       location: "WCH",
       summary: "nice event",
     },
     {
       title: "Lunch Break",
-      start: new Date(2024, 2, 20, 10, 0),
-      end: new Date(2024, 2, 5, 11, 0),
+      start: new Date(2024, 1, 20, 10, 0),
+      end: new Date(2024, 1, 20, 11, 0),
       location: "WCH",
       summary: "lit event",
     },
@@ -38,6 +41,31 @@ const CalendarEvents = () => {
             localizer={mLocalizer}
             defaultView="month"
             views={["month"]}
+            components={{
+              event: CustomEvent,
+              header: CustomHeader,
+              toolbar: CustomToolbar,
+            }}
+            onSelectEvent={(event) => setEvent(event)}
+            eventPropGetter={() => {
+              return {
+                className: `p-0 !active:ring-0 !focus:outline-0 !bg-transparent`,
+              };
+            }}
+            dayPropGetter={(event) => {
+              return {
+                className: `${
+                  new Date(event).toLocaleDateString() ==
+                  new Date().toLocaleDateString()
+                    ? "!bg-opacity-40 !bg-isa-yellow-100"
+                    : "!bg-transparent"
+                }`,
+                style: {
+                  margin: 0,
+                  padding: 0,
+                },
+              };
+            }}
           />
         </div>
       </div>
