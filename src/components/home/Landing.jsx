@@ -8,7 +8,6 @@ const Landing = () => {
   return (
     <div className="relative flex items-center justify-center h-screen my-10 ">
       <Image src={Sky} alt="Picture of sky" fill={true} />
-
       <Image
         src={Building}
         alt="Picture of building"
