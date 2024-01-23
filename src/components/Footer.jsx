@@ -6,7 +6,7 @@ import logo from "../../public/images/navlogo.webp";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-r from-isa-blue-200 to-isa-blue-100 w-full p-2 relative">
+    <div className="bg-gradient-to-r from-isa-blue-200 to-isa-blue-100 w-full p-2 fixed bottom-0">
       <div className="flex items-center font-bold text-3xl text-white space-x-3">
         <Image src={logo} alt="ISA icon" className="h-[45px] w-[45px]" />
         <div className="whitespace-nowrap">UCR ISA</div>
