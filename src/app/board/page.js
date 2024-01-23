@@ -9,9 +9,9 @@ const Meet = () => {
   }));
 
   return (
-    <div className="flex flex-col items-center justify-start min-h-screen pt-10">
+    <div className="flex flex-col items-center justify-start min-h-screen pt-16">
       <Title text="Meet the Board" />
-      <div className="grid grid-cols-4 gap-12 mt-10">
+      <div className="grid grid-cols-4 gap-y-12 gap-x-32 mt-10">
         {boardMembers.map((member, index) => (
           <Board key={index} name={member.name} position={member.position} />
         ))}
