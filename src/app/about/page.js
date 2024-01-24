@@ -6,22 +6,24 @@ import Sun from "@/public/assets/sun.svg";
 
 const About = () => {
   return (
-    <div className="pb-56 absolute overflow-x-hidden">
+    <div className="pb-56 overflow-hidden">
       <Image
         src={Logo}
         alt="ISA Icon"
         className="py-8 mx-auto h-[400px] w-[400px]"
       />
-      <Image
-        src={Sun}
-        alt="blue sun"
-        className="absolute bottom-0 -left-[250px] h-[800px] w-[600px]"
-      />
-      <Image
-        src={Sun}
-        alt="blue sun"
-        className="absolute top-0 -right-[250px] h-[700px] w-[600px]"
-      />
+      <div className="w-full relative flex flex-row justify-center items-center">
+        <Image
+          src={Sun}
+          alt="Blue sun"
+          className="hidden xl:block absolute -right-[25%] 2xl:-right-[15%] scale-140"
+        />
+        <Image
+          src={Sun}
+          alt="Blue sun"
+          className="hidden xl:block absolute top-[500px] -left-[25%] 2xl:-left-[15%] scale-140"
+        />
+      </div>
       {sections.map((section, index) => (
         <div
           key={index}
