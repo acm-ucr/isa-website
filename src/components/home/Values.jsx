@@ -6,7 +6,7 @@ import { VALUES } from "../../data/home/Values";
 const Values = () => {
   return (
     <div>
-      <Title text={"Our Core Values"} />
+      <Title text="Our Core Values" />
       <div className="flex flex-row items-center justify-center space-x-6 p-4 mt-6 mb-20">
         {VALUES.map((value, index) => (
           <Value
