@@ -58,7 +58,7 @@ const CalendarEvents = () => {
                   new Date(event).toLocaleDateString() ==
                   new Date().toLocaleDateString()
                     ? "!bg-opacity-40 !bg-isa-yellow-100"
-                    : "!bg-transparent"
+                    : "!bg-white"
                 }`,
                 style: {
                   margin: 0,

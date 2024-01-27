@@ -8,19 +8,19 @@ const Events = () => {
     <div className="overflow-hidden">
       <div className="h-10" />
       <Title text="Calendar" />
-      <CalendarEvents />
       <div className="w-full relative flex flex-row justify-center items-center">
         <Image
           src={Sun}
           alt="Blue sun"
-          className="hidden lg:block absolute lg:-right-[35%] bottom-0 scale-75"
+          className="hidden lg:block absolute lg:-right-[35%] xl:-right-[20%] top-10 scale-75"
         />
         <Image
           src={Sun}
           alt="Blue sun"
-          className="hidden lg:block absolute lg:-left-[25%] scale-75"
+          className="hidden lg:block absolute lg:-left-[25%] xl:-left-[15%] lg:top-[500px] xl:top-[650px] scale-75"
         />
       </div>
+      <CalendarEvents />
     </div>
   );
 };
