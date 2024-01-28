@@ -7,7 +7,7 @@ const Value = ({ title, description, icon }) => {
       <div className="w-full text-center pt-4 text-white size-9 font-extrabold tracking-wider">
         {title}
       </div>
-      <div className="w-full text-center px-10 pt-12 text-white text-base font-semibold tracking-wider">
+      <div className="w-full text-center px-10 pt-8 text-white text-base font-semibold tracking-wider">
         {description}
       </div>
     </div>

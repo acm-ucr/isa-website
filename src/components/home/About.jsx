@@ -3,19 +3,17 @@ import Title from "@/components/Title";
 
 import Image from "next/image";
 import cloud from "@/public/assets/cloud.svg";
-import navlogo from "@/public/images/navlogo.webp";
+import logo from "@/public/assets/logo.svg";
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center mt-52">
-      <div className="flex items-center px-32">
-        <Image
-          src={navlogo}
-          alt="Picture of navlogo"
-          className="scale-125 z-1 ml-8"
-        />
+    <div className="flex flex-col items-center my-[4%]">
+      <div className="flex items-center justify-center px-[10%]">
+        <div className="flex w-2/5 justify-center items-start">
+          <Image src={logo} alt="Picture of logo" className="z-1" />
+        </div>
 
-        <div className="flex-co text-center w-1/2 mx-auto text-lg">
+        <div className="flex-col text-center w-3/5 mx-auto text-2xl mb-5">
           <Title text="About us" />
           <div className="mt-4">
             Indian Student Association-ISA at UCR serves the purpose to provide
@@ -27,11 +25,7 @@ const About = () => {
         </div>
       </div>
 
-      <Image
-        src={cloud}
-        alt="Picture of cloud"
-        className="mt-[-68px] z-0 w-full"
-      />
+      <Image src={cloud} alt="Picture of cloud" className="z-0 w-full" />
     </div>
   );
 };
