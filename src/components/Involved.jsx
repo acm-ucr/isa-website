@@ -6,7 +6,7 @@ const Involved = () => {
   return (
     <div>
       <Title text="Get Involved" />
-      <div className="flex justify-content-center">
+      <div className="flex justify-content-center pb-40 pt-12">
         {SOCIALS.map((social, index) => {
           return (
             <Social
