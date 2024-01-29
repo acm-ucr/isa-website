@@ -1,4 +1,4 @@
-import Title from "@/components/handbook/Title";
+import Title from "@/components/Title";
 import Button from "@/components/Button";
 const NotFound = () => {
   return (
