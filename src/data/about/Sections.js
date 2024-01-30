@@ -4,7 +4,7 @@ export const sections = [
   {
     title: <Title text="Our History" />,
     description:
-      "Founded in 2003, the Indian Students' Association at UC Riverside has been one of the key gathering points of the graduate students and scholars from India at the university. Out vision is to increase and promote awareness and understanding of India as a nation, a culture and a diverse yet essentially united body of people, through various means as appropriate.",
+      "Founded in 2003, the Indian Students' Association at UC Riverside has been one of the key gathering points of the graduate students and scholars from India at the university. Our vision is to increase and promote awareness and understanding of India as a nation, a culture and a diverse yet essentially united body of people, through various means as appropriate.",
   },
   {
     title: <Title text="What We Do" />,
