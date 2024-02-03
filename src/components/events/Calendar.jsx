@@ -3,30 +3,55 @@ import React from "react";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import { Calendar, momentLocalizer } from "react-big-calendar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CustomToolbar from "./CustomToolbar";
 import CustomHeader from "./CustomHeader";
 import CustomEvent from "./CustomEvent";
 
 const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
+  //const [event, setEvent] = useState(null);
+  const [events, setEvents] = useState([]);
   const [date, setDate] = useState(new Date());
-  const dummyEvents = [
-    {
-      title: "Meeting with Team",
-      start: new Date(2024, 0, 24, 10, 0),
-      end: new Date(2024, 0, 24, 11, 0),
-      location: "WCH",
-      summary: "nice event",
-    },
-    {
-      title: "Lunch Break",
-      start: new Date(2024, 1, 20, 10, 0),
-      end: new Date(2024, 1, 20, 11, 0),
-      location: "WCH",
-      summary: "lit event",
-    },
-  ];
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          `https://www.googleapis.com/calendar/v3/calendars/${
+            process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL
+          }/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
+          &singleEvents=true&orderBy=startTime&timeMin=${new Date(
+            new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
+          ).toISOString()}&timeMax=${new Date(
+            new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
+          ).toISOString()}`
+        );
+
+        const offset = new Date().getTimezoneOffset() * 60000;
+        const data = await response.json();
+        const items = data.items.map((item) => {
+          item.allDay = !item.start.dateTime;
+          (item.start = item.start.dateTime
+            ? new Date(item.start.dateTime)
+            : new Date(new Date(item.start.date).getTime() + offset)),
+            (item.end = new Date(
+              item.end.dateTime || new Date(item.end.date).getTime() + offset
+            )),
+            (item.hidden = false);
+
+          return item;
+        });
+        setEvents(items);
+        console.log("bruh");
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <section className="w-full flex justify-center items-center flex-col">
       <div className="mb-5 w-11/12 flex justify-center items-center">
@@ -37,7 +62,7 @@ const CalendarEvents = () => {
             onNavigate={(newDate) => {
               setDate(newDate);
             }}
-            events={dummyEvents}
+            events={events}
             localizer={mLocalizer}
             defaultView="month"
             views={["month"]}
