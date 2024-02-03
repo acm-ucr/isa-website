@@ -10,7 +10,6 @@ import CustomEvent from "./CustomEvent";
 
 const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
-  //const [event, setEvent] = useState(null);
   const [events, setEvents] = useState([]);
   const [date, setDate] = useState(new Date());
 
