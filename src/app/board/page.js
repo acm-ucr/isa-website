@@ -17,7 +17,7 @@ const Meet = () => {
         <Image
           src={Sun}
           alt="Blue sun"
-          className="hidden xl:block absolute -right-[25%] pt-96 pl-8 scale-140 -z-10"
+          className="hidden xl:block absolute -right-[25%] scale-140 -z-10"
         />
       </div>
       <div className="grid grid-cols-2 gap-x-6 gap-y-12 mt-4 mb-4 md:grid-cols-3 md:gap-x-16 md:mt-10 lg:grid-cols-4 lg:gap-x-32 lg:mt-10">
