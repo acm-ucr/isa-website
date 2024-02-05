@@ -8,7 +8,6 @@ import Logo from "../../public/images/navlogo.webp";
 import { FaBars } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import { items } from "@/data/nav";
-import { FaMinus } from "react-icons/fa6";
 
 const Navigation = () => {
   const pathname = usePathname().slice(1);
@@ -17,7 +16,7 @@ const Navigation = () => {
     <Navbar
       collapseOnSelect
       expand="md"
-      className="w-full p-2 bg-gradient-to-r from-isa-blue-200 to-isa-blue-100"
+      className="w-full p-2 bg-gradient-to-r from-isa-blue-200 to-isa-blue-100 sticky top-0 z-50"
     >
       <Navbar.Brand>
         <Link href="/">
@@ -43,10 +42,14 @@ const Navigation = () => {
               className="flex flex-col items-center hover:!text-isa-yellow-100 text-3xl font-bold text-white ml-7 mr-7"
             >
               {item.name}
-              <div className="flex justify-center md:absolute bottom-5 h-1">
-                {pathname === item.name && (
-                  <FaMinus className="text-isa-yellow-200" />
-                )}
+              <div className="flex justify-center md:absolute mt-9">
+                <div
+                  className={
+                    pathname === item.name
+                      ? "bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100 px-4 py-1 rounded-full"
+                      : "hidden"
+                  }
+                ></div>
               </div>
             </Nav.Link>
           ))}
