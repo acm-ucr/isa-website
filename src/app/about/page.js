@@ -27,10 +27,10 @@ const About = () => {
       {sections.map((section, index) => (
         <div
           key={index}
-          className="flex flex-col mx-auto w-1/2 text-center pb-12"
+          className="flex flex-col mx-auto leading-loose md:leading-normal md:w-1/2 w-4/5 text-center pb-12"
         >
           <div className="pb-6">{section.title}</div>
-          <div className="text-2xl">{section.description}</div>
+          <div className="text-xl md:text-2xl">{section.description}</div>
         </div>
       ))}
     </div>

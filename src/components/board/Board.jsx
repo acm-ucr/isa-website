@@ -1,4 +1,4 @@
-const Board = ({ name = "No name", position = "N/A" }) => {
+const Board = ({ name, position }) => {
   return (
     <div className="board flex">
       <div className="h-h20 w-1.5 bg-gradient-to-t from-isa-yellow-200 to-isa-yellow-100 rounded-lg mr-2" />
