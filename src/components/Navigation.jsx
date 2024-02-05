@@ -42,11 +42,11 @@ const Navigation = () => {
               className="flex flex-col items-center hover:!text-isa-yellow-100 text-3xl font-bold text-white ml-7 mr-7"
             >
               {item.name}
-              <div className="flex justify-center md:absolute mt-9">
+              <div className="flex justify-center md:absolute md:mt-9">
                 <div
                   className={
                     pathname === item.name
-                      ? "bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100 px-4 py-1 rounded-full"
+                      ? "bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100 px-4 py-1 rounded-full "
                       : "hidden"
                   }
                 ></div>
@@ -56,7 +56,7 @@ const Navigation = () => {
 
           <Nav.Link
             href="\"
-            className="flex justify-center items-center text-white text-3xl font-bold w-44 h-11 rounded-full bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100"
+            className="flex justify-center items-center text-white text-3xl font-bold w-44 h-11 rounded-full bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100 md:mt-0 mt-2"
           >
             JOIN
           </Nav.Link>
