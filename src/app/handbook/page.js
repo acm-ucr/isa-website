@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Handbook = () => {
   return (
-    <div className="flex flex-col text-xl items-center justify-center p-[4%]">
+    <div className="flex flex-col text-base md:text-xl items-center justify-center md:p-[4%] m-0 p-0">
       <Title text="New Student Handbook" />
-      <div className="w-2/3">
+      <div className="md:w-2/3 w-4/5">
         <Subtitle text="Arriving at UCR" />
         You can reach the US one month before the date given on your I-20 that
         is the latest you&apos;re required to show up. Ideally, you should reach
