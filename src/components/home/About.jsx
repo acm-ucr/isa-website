@@ -8,12 +8,12 @@ import logo from "@/public/assets/logo.svg";
 const About = () => {
   return (
     <div className="flex flex-col items-center my-4">
-      <div className="flex flex-col sm:flex-row items-center justify-center px-10">
+      <div className="flex flex-col sm:flex-row items-center justify-center px-10 lg:px-64">
         <div className="flex justify-center items-center w-full sm:w-2/5">
           <Image src={logo} alt="Picture of logo" className="z-10" />
         </div>
 
-        <div className="flex flex-col items-center text-center w-full sm:w-3/5 mt-5 sm:mt-0 text-2xl">
+        <div className="flex flex-col items-center text-center w-full sm:w-3/5 mt-5 mb-10 sm:mt-0 text-2xl">
           <Title text="About us" />
           <div className="mt-4">
             Indian Student Association-ISA at UCR serves the purpose to provide
