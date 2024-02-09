@@ -16,11 +16,11 @@ const Navigation = () => {
     <Navbar
       collapseOnSelect
       expand="md"
-      className="w-full p-2 bg-gradient-to-r from-isa-blue-200 to-isa-blue-100 sticky top-0 z-50"
+      className="w-full p-2 bg-gradient-to-r from-isa-blue-200 to-isa-blue-100 sticky top-0 z-50 "
     >
       <Navbar.Brand>
         <Link href="/">
-          <div className="flex items-center font-bold text-3xl space-x-3">
+          <div className="flex items-center font-bold text-3xl space-x-3 ">
             <Image src={Logo} alt="ISA icon" className="h-[45px] w-[45px]" />
             <div className="text-white">UCR ISA</div>
           </div>
@@ -33,13 +33,13 @@ const Navigation = () => {
         <FaBars className="text-white text-2xl" />
       </Navbar.Toggle>
       <Navbar.Collapse className="justify-center items-end">
-        <Nav className="ml-auto flex items-center">
+        <Nav className="ml-auto flex items-center justify-center">
           {items.map((item, index) => (
             <Nav.Link
               as={Link}
               key={index}
               href={item.link}
-              className="flex flex-col items-center hover:!text-isa-yellow-100 text-3xl font-bold text-white ml-7 mr-7"
+              className="flex flex-col items-center hover:!text-isa-yellow-100 text-3xl font-bold text-white ml-7 mr-7 "
             >
               {item.name}
               <div className="flex justify-center md:absolute md:mt-9">
@@ -56,7 +56,7 @@ const Navigation = () => {
 
           <Nav.Link
             href="\"
-            className="flex justify-center items-center text-white text-3xl font-bold w-44 h-11 rounded-full bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100 md:mt-0 mt-2"
+            className="flex justify-center items-center text-white text-3xl font-bold w-44 h-11 rounded-full bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100 mt-2 mb-2"
           >
             JOIN
           </Nav.Link>
