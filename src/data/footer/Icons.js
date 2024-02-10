@@ -2,7 +2,7 @@ import React from "react";
 import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
-const className = "text-4xl";
+const className = "md:text-4xl text-2xl";
 export const ICONS = [
   {
     link: "https://www.instagram.com",
