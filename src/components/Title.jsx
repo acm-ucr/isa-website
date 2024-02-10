@@ -1,11 +1,11 @@
 import React from "react";
 import { PiStarFourFill } from "react-icons/pi";
 
-const Title = ({ text, className }) => {
+const Title = ({ text, size = "text-3xl" }) => {
   return (
     <div className="flex-col flex items-center">
       <div
-        className={`text-isa-yellow-200 text-center font-extrabold md:text-4xl text-3xl ${className}`}
+        className={`text-isa-yellow-200 text-center font-extrabold md:text-4xl ${size}`}
       >
         {text}
       </div>
