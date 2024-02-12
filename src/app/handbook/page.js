@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Handbook = () => {
   return (
-    <div className="flex flex-col text-base md:text-xl items-center justify-center md:p-[4%] m-0 p-0">
+    <div className="flex flex-col text-base md:text-xl items-center justify-center md:p-[4%] m-0 p-0 pb-4 pt-3">
       <Title text="New Student Handbook" />
       <div className="md:w-2/3 w-4/5">
         <Subtitle text="Arriving at UCR" />
