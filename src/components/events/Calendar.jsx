@@ -7,6 +7,7 @@ import { useState } from "react";
 import CustomToolbar from "./CustomToolbar";
 import CustomHeader from "./CustomHeader";
 import CustomEvent from "./CustomEvent";
+import "./rbc.css";
 
 const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
