@@ -5,7 +5,7 @@ import { VALUES } from "../../data/home/Values";
 
 const Values = () => {
   return (
-    <div>
+    <div className="mt-[5%]">
       <Title text="Our Core Values" />
       <div className="flex md:flex-row flex-col items-center justify-center md:space-x-6 p-4 mt-6 mb-20">
         {VALUES.map((value, index) => (

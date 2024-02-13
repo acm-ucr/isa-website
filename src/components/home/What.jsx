@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const What = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center my-[5%]">
+    <div className="relative flex flex-col items-center justify-center">
       <Image
         src={Stars}
         className="absolute md:w-2/5 w-4/5 z-10 top-0 "
