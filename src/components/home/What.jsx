@@ -16,7 +16,7 @@ const What = () => {
         <Title text="What We Do" />
       </div>
 
-      <p className="text-center md:text-2xl text-xl my-3 w-3/4 z-20">
+      <p className="text-center md:text-2xl text-xl my-5 w-3/4 z-20">
         Through this organization, we try to promote positive interaction among
         students of either Indian origin or desirous of understanding the Indian
         culture. This includes ensuring the smooth transition of newly-arrived
