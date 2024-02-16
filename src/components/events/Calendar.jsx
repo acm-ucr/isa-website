@@ -13,19 +13,19 @@ const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
   const [events, setEvents] = useState([]);
   const [date, setDate] = useState(new Date());
+  const startDate = new Date(
+    new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
+  ).toISOString();
+  const endDate = new Date(
+    new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
+  ).toISOString();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `https://www.googleapis.com/calendar/v3/calendars/${
-            process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL
-          }/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
-          &singleEvents=true&orderBy=startTime&timeMin=${new Date(
-            new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
-          ).toISOString()}&timeMax=${new Date(
-            new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
-          ).toISOString()}`
+          `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
+          &singleEvents=true&orderBy=startTime&timeMin=${startDate}&timeMax=${endDate}`
         );
 
         const offset = new Date().getTimezoneOffset() * 60000;
@@ -39,11 +39,9 @@ const CalendarEvents = () => {
               item.end.dateTime || new Date(item.end.date).getTime() + offset
             )),
             (item.hidden = false);
-
           return item;
         });
         setEvents(items);
-        console.log("bruh");
       } catch (error) {
         console.error("Error fetching data: ", error);
       }
