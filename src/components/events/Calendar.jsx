@@ -13,14 +13,14 @@ const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
   const [events, setEvents] = useState([]);
   const [date, setDate] = useState(new Date());
-  const startDate = new Date(
-    new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
-  ).toISOString();
-  const endDate = new Date(
-    new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
-  ).toISOString();
 
   useEffect(() => {
+    const startDate = new Date(
+      new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
+    ).toISOString();
+    const endDate = new Date(
+      new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
+    ).toISOString();
     const fetchData = async () => {
       try {
         const response = await fetch(
