@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import CustomToolbar from "./CustomToolbar";
 import CustomHeader from "./CustomHeader";
 import CustomEvent from "./CustomEvent";
+import "./rbc.css";
 
 const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
@@ -81,7 +82,7 @@ const CalendarEvents = () => {
                 className: `${
                   new Date(event).toLocaleDateString() ==
                   new Date().toLocaleDateString()
-                    ? "!bg-opacity-40 !bg-isa-yellow-100"
+                    ? "!bg-isa-yellow-100"
                     : "!bg-white"
                 }`,
                 style: {
