@@ -21,9 +21,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <Navigation />
-        {children}
-        <Footer />
+        <div className="flex flex-col h-screen">
+          <Navigation />
+          <div className="flex flex-col flex-1">{children}</div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
