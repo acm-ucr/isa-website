@@ -12,8 +12,27 @@ import Modal from "./Modal";
 
 const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
-  const [events, setEvents] = useState(null);
+  const [events, setEvents] = useState([]);
   const [date, setDate] = useState(new Date());
+
+  const [selectedEvent, setSelectedEvent] = useState(null);
+
+  const dummyEvents = [
+    {
+      title: "Meeting with Team",
+      start: new Date(2023, 10, 30, 10, 0),
+      end: new Date(2023, 10, 30, 11, 0),
+      location: "WCH",
+      summary: "nice event",
+    },
+    {
+      title: "Lunch Break",
+      start: new Date(2023, 10, 30, 13, 0),
+      end: new Date(2023, 10, 30, 14, 0),
+      location: "WCH",
+      summary: "lit event",
+    },
+  ];
 
   useEffect(() => {
     const startDate = new Date(
@@ -70,7 +89,7 @@ const CalendarEvents = () => {
               header: CustomHeader,
               toolbar: CustomToolbar,
             }}
-            onSelectEvent={(event) => setEvents(event)}
+            onSelectEvent={(event) => setSelectedEvent(event)}
             eventPropGetter={() => {
               return {
                 className: `p-0 !active:ring-0 !focus:outline-0 !bg-transparent`,
@@ -92,7 +111,9 @@ const CalendarEvents = () => {
             }}
           />
         </div>
-        {events !== null && <Modal setEvents={setEvents} events={events} />}
+        {selectedEvent !== null && (
+          <Modal setEvents={setSelectedEvent} events={selectedEvent} />
+        )}
       </div>
     </section>
   );
