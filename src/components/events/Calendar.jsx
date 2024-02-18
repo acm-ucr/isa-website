@@ -7,10 +7,15 @@ import { useState } from "react";
 import CustomToolbar from "./CustomToolbar";
 import CustomHeader from "./CustomHeader";
 import CustomEvent from "./CustomEvent";
+import Modal from "./Modal";
 
 const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
   const [date, setDate] = useState(new Date());
+
+  // const [events, setEvents] = useState([]);
+  const [modalEvent, setModalEvent] = useState(null);
+
   const dummyEvents = [
     {
       title: "Meeting with Team",
@@ -28,7 +33,7 @@ const CalendarEvents = () => {
     },
   ];
   return (
-    <section className="w-full flex justify-center items-center flex-col">
+    <section className="w-full flex justify-center items-center flex-col mb-16">
       <div className="mb-5 w-11/12 flex justify-center items-center">
         <div className="h-[110vh] w-full relative">
           <Calendar
@@ -46,7 +51,9 @@ const CalendarEvents = () => {
               header: CustomHeader,
               toolbar: CustomToolbar,
             }}
-            onSelectEvent={(event) => setEvent(event)}
+            onSelectEvent={(event) => {
+              setModalEvent(event);
+            }}
             eventPropGetter={() => {
               return {
                 className: `p-0 !active:ring-0 !focus:outline-0 !bg-transparent`,
@@ -67,6 +74,7 @@ const CalendarEvents = () => {
               };
             }}
           />
+          <Modal event={modalEvent} setState={setModalEvent} />
         </div>
       </div>
     </section>

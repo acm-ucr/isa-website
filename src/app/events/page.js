@@ -6,7 +6,7 @@ import Image from "next/image";
 const Events = () => {
   return (
     <div className="overflow-hidden">
-      <div className="h-10" />
+      <div className="h-20" />
       <Title text="Calendar" />
       <div className="w-full relative flex flex-row justify-center items-center">
         <Image

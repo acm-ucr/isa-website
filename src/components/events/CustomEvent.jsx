@@ -1,7 +1,7 @@
 const CustomEvent = ({ event }) => {
   return (
-    <div className="font-nunito bg-isa-yellow-100 text-sm text-center">
-      <p className="whitespace-nowrap m-0">{event.title}</p>
+    <div className="flex items-center justify-center font-nunito bg-isa-yellow-100 text-base text-center h-[30px]">
+      <p className="whitespace-nowrap">{event.title}</p>
     </div>
   );
 };
