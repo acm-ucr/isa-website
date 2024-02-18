@@ -11,7 +11,7 @@ const Meet = () => {
   }));
 
   return (
-    <div className="flex flex-col items-center justify-start flex-1 pt-4 sm:pt-16 md:pt-32 lg:pt-16 overflow-hidden">
+    <div className="flex flex-col items-center justify-start min-h-screen pt-4 sm:pt-16 md:pt-32 lg:pt-16 overflow-hidden">
       <Title text="Meet the Board" />
       <div className="w-full relative flex flex-row justify-center items-center">
         <Image

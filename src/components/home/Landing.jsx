@@ -31,7 +31,14 @@ const Landing = () => {
           Indian Student Association
         </motion.div>
         <div className="text-isa-white md:text-3xl text-sm flex flex-row">
-          <FaMapPin className="mr-5" />
+          <motion.div
+            variants={animations}
+            initial="start"
+            whileInView="end"
+            transition={{ delay: 0.2 }}
+          >
+            <FaMapPin className="mr-5" />
+          </motion.div>
           <motion.div
             variants={animations}
             initial="start"
