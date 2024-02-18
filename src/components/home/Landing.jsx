@@ -20,8 +20,7 @@ const Landing = () => {
   return (
     <div className="flex items-start justify-center my-[5%]">
       <Image src={LandingImage} alt="Landing Picture" />
-
-      <div className="absolute z-20 text-isa-white text-nowrap md:text-6xl text-2xl font-bold flex flex-col items-center justify-center mt-[5%]">
+      <div className="absolute z-20 text-isa-white text-nowrap lg:text-6xl text-2xl font-bold flex flex-col items-center justify-center mt-[5%]">
         <motion.div
           variants={animations}
           initial="start"
@@ -30,7 +29,7 @@ const Landing = () => {
         >
           Indian Student Association
         </motion.div>
-        <div className="text-isa-white md:text-3xl text-sm flex flex-row">
+        <div className="text-isa-white lg:text-3xl text-sm flex flex-row">
           <motion.div
             className="flex items-center"
             variants={animations}
@@ -42,7 +41,7 @@ const Landing = () => {
             University of California Riverside
           </motion.div>
         </div>
-        <div className="md:mt-4 mt-3">
+        <div className="lg:mt-4 mt-3">
           <motion.div
             variants={animations}
             initial="start"

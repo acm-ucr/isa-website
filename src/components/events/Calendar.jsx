@@ -94,7 +94,7 @@ const CalendarEvents = () => {
             }}
           />
         </div>
-        {selectedEvent !== null && (
+        {selectedEvent && (
           <Modal setEvents={setSelectedEvent} events={selectedEvent} />
         )}
       </div>
