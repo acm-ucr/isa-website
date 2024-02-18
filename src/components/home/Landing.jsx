@@ -32,19 +32,13 @@ const Landing = () => {
         </motion.div>
         <div className="text-isa-white md:text-3xl text-sm flex flex-row">
           <motion.div
+            className="flex items-center"
             variants={animations}
             initial="start"
             whileInView="end"
             transition={{ delay: 0.2 }}
           >
             <FaMapPin className="mr-5" />
-          </motion.div>
-          <motion.div
-            variants={animations}
-            initial="start"
-            whileInView="end"
-            transition={{ delay: 0.2 }}
-          >
             University of California Riverside
           </motion.div>
         </div>
