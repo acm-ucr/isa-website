@@ -93,7 +93,6 @@ const CalendarEvents = () => {
               };
             }}
           />
-          <Modal event={modalEvent} setState={setModalEvent} />
         </div>
         {selectedEvent && (
           <Modal setEvents={setSelectedEvent} events={selectedEvent} />
