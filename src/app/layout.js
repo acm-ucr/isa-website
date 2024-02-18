@@ -20,12 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>
-        <div className="flex flex-col h-screen">
-          <Navigation />
-          <div className="flex flex-col flex-1">{children}</div>
-          <Footer />
-        </div>
+      <body className={`flex flex-col min-h-screen ${nunito.className}`}>
+        <Navigation />
+        {children}
+        <Footer />
       </body>
     </html>
   );
