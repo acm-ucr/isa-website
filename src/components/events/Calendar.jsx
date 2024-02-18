@@ -17,23 +17,6 @@ const CalendarEvents = () => {
 
   const [selectedEvent, setSelectedEvent] = useState(null);
 
-  const dummyEvents = [
-    {
-      title: "Meeting with Team",
-      start: new Date(2023, 10, 30, 10, 0),
-      end: new Date(2023, 10, 30, 11, 0),
-      location: "WCH",
-      summary: "nice event",
-    },
-    {
-      title: "Lunch Break",
-      start: new Date(2023, 10, 30, 13, 0),
-      end: new Date(2023, 10, 30, 14, 0),
-      location: "WCH",
-      summary: "lit event",
-    },
-  ];
-
   useEffect(() => {
     const startDate = new Date(
       new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
