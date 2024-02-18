@@ -19,7 +19,7 @@ const animations = {
 const Events = () => {
   return (
     <div className="overflow-hidden">
-      <div className="h-10" />
+      <div className="h-20" />
       <motion.div
         variants={animations}
         initial="start"
