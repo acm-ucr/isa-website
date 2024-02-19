@@ -16,16 +16,7 @@ const animations = {
   },
 };
 
-const sunRight = {
-  start: {
-    opacity: 0,
-  },
-  end: {
-    opacity: 1,
-  },
-};
-
-const sunLeft = {
+const sun = {
   start: {
     opacity: 0,
   },
@@ -52,7 +43,7 @@ const About = () => {
 
       <div className="w-full relative flex flex-row justify-center items-center">
         <motion.div
-          variants={sunRight}
+          variants={sun}
           initial="start"
           whileInView="end"
           transition={{ ease: "easeIn", duration: 2, delay: 0.2 }}
@@ -65,7 +56,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          variants={sunLeft}
+          variants={sun}
           initial="start"
           whileInView="end"
           transition={{ ease: "easeIn", duration: 2, delay: 0.2 }}
