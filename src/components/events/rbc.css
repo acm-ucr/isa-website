@@ -1,3 +1,19 @@
 .rbc-header:first-child {
   border-top-left-radius: 30px;
 }
+
+.rbc-header:last-child {
+  border-top-right-radius: 30px;
+}
+
+.rbc-month-row:last-child .rbc-row-bg .rbc-day-bg:first-child {
+  border-bottom-left-radius: 30px;
+}
+
+.rbc-month-row:last-child .rbc-row-bg .rbc-day-bg:last-child {
+  border-bottom-right-radius: 30px;
+}
+
+.rbc-header {
+  padding: 0 0px;
+}
