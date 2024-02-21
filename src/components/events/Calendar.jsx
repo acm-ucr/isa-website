@@ -58,7 +58,7 @@ const CalendarEvents = () => {
       <div className="mb-5 w-11/12 flex justify-center items-center">
         <div className="h-[110vh] w-full relative">
           <Calendar
-            className="w-full m-0 p-0 text-3xl"
+            className="w-full m-0 p-0 md:text-3xl text-lg"
             date={date}
             onNavigate={(newDate) => {
               setDate(newDate);
