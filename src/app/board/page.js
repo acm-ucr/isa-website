@@ -32,7 +32,7 @@ const Meet = () => {
   }));
 
   return (
-    <div className="flex flex-col items-center justify-start flex-1 pt-4 sm:pt-16 md:pt-32 lg:pt-16 overflow-hidden">
+    <div className="flex flex-col items-center justify-start flex-1 pt-4 sm:pt-16 md:pt-32 lg:pt-16 overflow-hidden mt-[3%]">
       <motion.div
         variants={animations}
         initial="start"
@@ -41,7 +41,7 @@ const Meet = () => {
       >
         <Title text="Meet the Board" />
       </motion.div>
-      <div className="w-full relative flex flex-row justify-center items-center">
+      <div className="w-full relative flex flex-row justify-center items-center mt-4">
         <motion.div
           variants={sun}
           initial="start"

@@ -19,9 +19,11 @@ const animations = {
 const sun = {
   start: {
     opacity: 0,
+    rotate: 30,
   },
   end: {
     opacity: 1,
+    rotate: 0,
   },
 };
 
@@ -46,13 +48,10 @@ const About = () => {
           variants={sun}
           initial="start"
           whileInView="end"
-          transition={{ ease: "easeIn", duration: 2, delay: 0.2 }}
+          transition={{ ease: "easeOut", duration: 2, delay: 0.4 }}
+          className="hidden xl:block absolute -right-[20%] scale-140"
         >
-          <Image
-            src={Sun}
-            alt="Blue sun"
-            className="hidden xl:block absolute -right-[25%] scale-140"
-          />
+          <Image src={Sun} alt="Blue sun" />
         </motion.div>
 
         <motion.div
