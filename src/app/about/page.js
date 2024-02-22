@@ -58,10 +58,13 @@ const About = () => {
           variants={sun}
           initial="start"
           whileInView="end"
-          transition={{ ease: "easeOut", duration: 2, delay: 0.2 }}
-          className="hidden xl:block absolute top-[500px] -left-[25%] scale-140"
+          transition={{ ease: "easeIn", duration: 2, delay: 0.2 }}
         >
-          <Image src={Sun} alt="Blue sun" />
+          <Image
+            src={Sun}
+            alt="Blue sun"
+            className="hidden xl:block absolute top-[500px] -left-[25%] scale-140"
+          />
         </motion.div>
       </div>
 
