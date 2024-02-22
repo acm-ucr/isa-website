@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="flex flex-col md:flex-row items-center justify-center px-10 lg:w-5/6">
-        <div className="flex justify-center items-center w-full md:w-2/5">
+        <div className="flex justify-center items-center w-full md:w-2/5 mr-10">
           <Image src={logo} alt="Picture of logo" className="z-10" />
         </div>
 
