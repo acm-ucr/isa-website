@@ -1,12 +1,12 @@
 import React from "react";
-import { MdTempleBuddhist } from "react-icons/md";
+import { GiIndianPalace } from "react-icons/gi";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { FaGraduationCap } from "react-icons/fa6";
 
 export const VALUES = [
   {
     title: "Cultural",
-    icon: <MdTempleBuddhist size={56} />,
+    icon: <GiIndianPalace size={56} />,
     description:
       "Embrace and celebrate the rich diversity of Indian culture, fostering an inclusive environment for all.",
   },
