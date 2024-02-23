@@ -53,7 +53,14 @@ const What = () => {
         campus.
       </motion.p>
 
-      <Button text="CHECK OUT NEW HANDBOOK" link="handbook" />
+      <motion.div
+        variants={animations}
+        initial="start"
+        whileInView="end"
+        transition={{ delay: 0.4 }}
+      >
+        <Button text="CHECK OUT NEW HANDBOOK" link="handbook" />
+      </motion.div>
     </div>
   );
 };
