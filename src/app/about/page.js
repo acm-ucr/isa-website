@@ -16,12 +16,12 @@ const About = () => {
         <Image
           src={Sun}
           alt="Blue sun"
-          className="hidden xl:block absolute -right-[25%] scale-140"
+          className="hidden lg:block absolute 2xl:-right-[13%] -right-[25%] scale-140"
         />
         <Image
           src={Sun}
           alt="Blue sun"
-          className="hidden xl:block absolute top-[500px] -left-[25%] scale-140"
+          className="hidden lg:block absolute top-[500px] 2xl:-left-[13%] -left-[25%] scale-140"
         />
       </div>
       {sections.map((section, index) => (
