@@ -19,7 +19,7 @@ const CalendarEvents = () => {
 
   useEffect(() => {
     const startDate = new Date(
-      new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
+      new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 100000
     ).toISOString();
     const endDate = new Date(
       new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
