@@ -55,7 +55,7 @@ const Navigation = () => {
           ))}
 
           <Nav.Link
-            href="\"
+            href="https://discord.gg/bmE32HzaKc"
             className="flex justify-center items-center text-white text-3xl font-bold w-44 h-11 rounded-full bg-gradient-to-r from-isa-yellow-200 to-isa-yellow-100 mt-2 mb-2"
           >
             JOIN

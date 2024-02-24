@@ -14,7 +14,7 @@ export const SOCIALS = [
   {
     name: "Discord",
     icon: <FaDiscord className={className} />,
-    link: "https://www.discord.com",
+    link: "https://discord.gg/bmE32HzaKc",
   },
   {
     name: "Instagram",
@@ -24,21 +24,21 @@ export const SOCIALS = [
   {
     name: "Facebook",
     icon: <FaFacebookSquare className={className} />,
-    link: "https://www.facebook.com",
+    link: "https://www.facebook.com/groups/isaucr/",
   },
   {
     name: "Email",
     icon: <IoMail className={className} />,
-    link: "https://www.gmail.com",
+    link: "mailto:isa.highlanders@gmail.com",
   },
   {
     name: "Youtube",
     icon: <FaYoutube className={className} />,
-    link: "https://www.youtube.com",
+    link: "https://www.youtube.com/@ucrisa9723",
   },
   {
     name: "Highlander",
     icon: <FaLink className={className} />,
-    link: "https://www.highlanderlink.ucr.edu/organization/indianstudentsassociation",
+    link: "https://highlanderlink.ucr.edu/organization/indianstudentsassociation/",
   },
 ];
