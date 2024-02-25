@@ -48,7 +48,7 @@ const Landing = () => {
             whileInView="end"
             transition={{ delay: 0.4 }}
           >
-            <Button text="JOIN NOW" link="https://discord.com" />
+            <Button text="JOIN NOW" link="https://discord.gg/bmE32HzaKc" />
           </motion.div>
         </div>
       </div>
