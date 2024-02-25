@@ -61,7 +61,7 @@ const About = () => {
           transition={{ ease: "easeOut", duration: 2, delay: 0.2 }}
           className="hidden lg:block absolute top-[500px] 2xl:-left-[13%] -left-[25%] scale-140"
         >
-         <Image src={Sun} alt="Blue sun" />
+          <Image src={Sun} alt="Blue sun" />
         </motion.div>
       </div>
 
