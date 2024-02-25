@@ -7,7 +7,7 @@ import Image from "next/image";
 import Logo from "../../public/images/navlogo.webp";
 import { FaBars } from "react-icons/fa";
 import { usePathname } from "next/navigation";
-import { items } from "@/data/nav";
+import { items } from "@/data/Nav";
 
 const Navigation = () => {
   const pathname = usePathname().slice(1);
