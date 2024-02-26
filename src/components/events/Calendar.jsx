@@ -83,7 +83,7 @@ const CalendarEvents = () => {
                 className: `${
                   new Date(event).toLocaleDateString() ==
                   new Date().toLocaleDateString()
-                    ? "!bg-isa-yellow-100"
+                    ? "!bg-isa-yellow-50"
                     : "!bg-white"
                 }`,
                 style: {
