@@ -31,7 +31,7 @@ const Values = () => {
         variants={animations}
         initial="start"
         whileInView="end"
-        transition={{ delay: 0.4 }} // Delay for the values to start after the title
+        transition={{ delay: 0.4 }}
         className="flex lg:flex-row flex-col items-center justify-center lg:space-y-0 space-y-10 lg:space-x-6 p-4 mt-6 mb-20"
       >
         {VALUES.map((value, index) => (
