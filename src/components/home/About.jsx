@@ -38,7 +38,7 @@ const About = () => {
             variants={animationsLTR}
             initial="start"
             whileInView="end"
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.2, type: "tween" }}
           >
             <Image src={logo} alt="Picture of logo" className="z-10" />
           </motion.div>
@@ -49,7 +49,7 @@ const About = () => {
             variants={animationsDTU}
             initial="start"
             whileInView="end"
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.2, type: "tween" }}
           >
             <Title text="About us" />
           </motion.div>
