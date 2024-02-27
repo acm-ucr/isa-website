@@ -18,7 +18,7 @@ const monthNames = [
 const CustomToolbar = (event) => {
   return (
     <div className="flex justify-start items-center w-full py-3 flex-col md:flex-row">
-      <div className="md:w-1/3 flex gap-3 mb-2 md:mb-0 items-center text-isa-yellow-200 font-bold">
+      <div className="md:w-1/3 flex gap-3 mb-2 md:mb-0 items-center text-isa-yellow-200 font-bold text-3xl">
         <AiOutlineArrowLeft
           onClick={() => {
             event.onNavigate("PREV");

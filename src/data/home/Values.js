@@ -1,25 +1,24 @@
 import React from "react";
-import CommunityIcon from "@/public/assets/community.svg";
-import GradCap from "@/public/assets/gradcap.svg";
-import Temple from "@/public/assets/temple.svg";
-import Image from "next/image";
+import { GiIndianPalace } from "react-icons/gi";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { FaGraduationCap } from "react-icons/fa6";
 
 export const VALUES = [
   {
     title: "Cultural",
-    icon: <Image src={Temple} alt="Temple" height={50} />,
+    icon: <GiIndianPalace size={56} />,
     description:
       "Embrace and celebrate the rich diversity of Indian culture, fostering an inclusive environment for all.",
   },
   {
     title: "Community",
-    icon: <Image src={CommunityIcon} alt="Community Icon" height={50} />,
+    icon: <FaPeopleGroup size={56} />,
     description:
       "Actively contribute to local and global communities through service initiatives and partnerships.",
   },
   {
     title: "Academic",
-    icon: <Image src={GradCap} alt="Graduation Cap" height={50} />,
+    icon: <FaGraduationCap size={56} />,
     description:
       "Dedication to supporting academic growth and success among our members.",
   },

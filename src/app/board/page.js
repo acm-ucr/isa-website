@@ -19,9 +19,11 @@ const animations = {
 const sun = {
   start: {
     opacity: 0,
+    rotate: 30,
   },
   end: {
     opacity: 1,
+    rotate: 0,
   },
 };
 
@@ -32,7 +34,7 @@ const Meet = () => {
   }));
 
   return (
-    <div className="flex flex-col items-center justify-start flex-1 pt-4 sm:pt-16 md:pt-32 lg:pt-16 overflow-hidden">
+    <div className="flex flex-col items-center justify-start flex-1 pt-4 sm:pt-16 md:pt-32 lg:pt-16 overflow-hidden mt-[3%]">
       <motion.div
         variants={animations}
         initial="start"
@@ -41,18 +43,15 @@ const Meet = () => {
       >
         <Title text="Meet the Board" />
       </motion.div>
-      <div className="w-full relative flex flex-row justify-center items-center">
+      <div className="w-full relative flex flex-row justify-center items-center mt-4">
         <motion.div
           variants={sun}
           initial="start"
-          animate="end"
-          transition={{ ease: "easeIn", duration: 2, delay: 0.2 }}
+          whileInView="end"
+          transition={{ ease: "easeOut", duration: 2, delay: 0.4 }}
+          className="hidden xl:block absolute -right-[25%] mt-[40%] scale-140 pl-8 -z-10"
         >
-          <Image
-            src={Sun}
-            alt="Blue sun"
-            className="hidden xl:block absolute -right-[25%] translate-y-[-10%] scale-140 pl-8 -z-10"
-          />
+          <Image src={Sun} alt="Blue sun" />
         </motion.div>
       </div>
       <motion.div
