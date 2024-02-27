@@ -15,7 +15,7 @@ const Footer = () => {
             <Link
               key={index}
               href={icon.link}
-              className="hover:scale-110 duration-300 m-2"
+              className="hover:scale-110 hover:text-isa-yellow-100 duration-300 m-2"
             >
               {icon.logo}
             </Link>
