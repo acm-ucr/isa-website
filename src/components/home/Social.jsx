@@ -3,7 +3,7 @@ import Link from "next/link";
 const Social = ({ icon, text, link }) => {
   return (
     <Link
-      className=" hover:text-isa-blue-100 text-isa-yellow-100 flex flex-col cursor-pointer items-center mx-16"
+      className=" hover:text-isa-blue-100 duration-300 text-isa-yellow-100 flex flex-col cursor-pointer items-center mx-16"
       href={link}
       target="_blank"
     >
