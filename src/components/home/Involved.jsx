@@ -17,7 +17,7 @@ const animations = {
 
 const Involved = () => {
   return (
-    <div>
+    <div className="md:my-[6%] my-[15%]">
       <motion.div
         variants={animations}
         initial="start"
@@ -32,7 +32,7 @@ const Involved = () => {
         whileInView="end"
         transition={{ delay: 0.4 }}
       >
-        <div className="grid xl:flex xl:flex-row gap-y-5 grid-cols-2 md:grid-cols-3 justify-content-center pb-40 pt-12">
+        <div className="grid xl:flex xl:flex-row gap-y-5 grid-cols-2 md:grid-cols-3 justify-content-center pt-12">
           {SOCIALS.map((social, index) => {
             return (
               <Social

@@ -1,6 +1,6 @@
 "use client";
 import Title from "@/components/Title";
-import CalendarEvents from "@/components/events/Calendar";
+import CalendarAPI from "@/components/events/CalendarAPI";
 import Sun from "@/public/assets/sun.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -67,7 +67,7 @@ const Events = () => {
         whileInView="end"
         transition={{ delay: 0.4 }}
       >
-        <CalendarEvents />
+        <CalendarAPI />
       </motion.div>
     </div>
   );

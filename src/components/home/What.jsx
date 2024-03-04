@@ -40,7 +40,7 @@ const What = () => {
       </motion.div>
 
       <motion.p
-        className="text-center md:text-2xl text-xl my-5 w-3/4 z-20"
+        className="text-center md:text-2xl text-xl md:my-5 my-4 w-3/4 z-20"
         variants={animations}
         initial="start"
         whileInView="end"

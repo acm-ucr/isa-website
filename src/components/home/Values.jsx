@@ -16,7 +16,7 @@ const animations = {
 };
 const Values = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center mt-[5%]">
+    <div className="relative flex flex-col items-center justify-center md:mt-[5%] mt-[15%]">
       <motion.div
         variants={animations}
         initial="start"
@@ -32,7 +32,7 @@ const Values = () => {
         initial="start"
         whileInView="end"
         transition={{ delay: 0.4 }}
-        className="flex lg:flex-row flex-col items-center justify-center lg:space-y-0 space-y-10 lg:space-x-6 p-4 mt-6 mb-20"
+        className="flex lg:flex-row flex-col items-center justify-center lg:space-y-0 space-y-10 lg:space-x-6 p-4 mt-6"
       >
         {VALUES.map((value, index) => (
           <Value
