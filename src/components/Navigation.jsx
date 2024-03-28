@@ -15,7 +15,7 @@ const Navigation = () => {
   return (
     <Navbar
       collapseOnSelect
-      expand="md"
+      expand="lg"
       className="w-full p-2 bg-gradient-to-r from-isa-blue-200 to-isa-blue-100 sticky top-0 z-50 "
     >
       <Navbar.Brand>

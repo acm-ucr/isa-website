@@ -4,6 +4,10 @@ export const items = [
     link: "about",
   },
   {
+    name: "handbook",
+    link: "handbook",
+  },
+  {
     name: "board",
     link: "board",
   },
