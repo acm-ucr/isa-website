@@ -16,7 +16,7 @@ const animations = {
 };
 const Values = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center mt-[5%]">
+    <div className="relative flex flex-col items-center justify-center md:mt-[7%] mt-[15%]">
       <motion.div
         variants={animations}
         initial="start"
