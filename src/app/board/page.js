@@ -4,6 +4,7 @@ import Board from "@/components/board/Board";
 import Sun from "@/public/assets/sun.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { BOARD } from "@/data/board/Board";
 
 const animations = {
   start: {
@@ -28,11 +29,6 @@ const sun = {
 };
 
 const Meet = () => {
-  const boardMembers = Array.from({ length: 12 }, () => ({
-    name: "Evan Littlecat",
-    position: "Position Name",
-  }));
-
   return (
     <div className="flex flex-col items-center justify-start flex-1 pt-4 sm:pt-16 md:pt-32 lg:pt-16 overflow-hidden mt-[3%]">
       <motion.div
@@ -61,7 +57,7 @@ const Meet = () => {
         transition={{ delay: 0.4 }}
         className="grid grid-cols-2 gap-x-6 gap-y-12 mt-4 mb-4 md:grid-cols-3 md:gap-x-16 md:mt-10 lg:grid-cols-4 lg:gap-x-32 lg:mt-10"
       >
-        {boardMembers.map((member, index) => (
+        {BOARD.map((member, index) => (
           <Board key={index} name={member.name} position={member.position} />
         ))}
       </motion.div>
