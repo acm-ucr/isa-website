@@ -55,7 +55,7 @@ const Meet = () => {
         initial="start"
         animate="end"
         transition={{ delay: 0.4 }}
-        className="grid grid-cols-2 gap-x-6 gap-y-12 mt-4 mb-4 md:grid-cols-3 md:gap-x-16 md:mt-10 lg:grid-cols-4 lg:gap-x-32 lg:mt-10"
+        className="grid grid-cols-1 gap-x-6 gap-y-12 mt-4 mb-4 md:grid-cols-3 md:gap-x-16 md:mt-10 lg:grid-cols-4 lg:gap-x-32 lg:mt-10"
       >
         {BOARD.map((member, index) => (
           <Board key={index} name={member.name} position={member.position} />
