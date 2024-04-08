@@ -4,15 +4,11 @@ export const BOARD = [
     position: "Co-President",
   },
   {
-    name: "Sumedha",
+    name: "Sumedha Polu",
     position: "Co-President",
   },
   {
-    name: "Ruhi",
-    position: "Vice President",
-  },
-  {
-    name: "Vrisha",
+    name: "Ruhi Barot",
     position: "Vice President",
   },
   {
@@ -20,11 +16,27 @@ export const BOARD = [
     position: "Treasurer",
   },
   {
-    name: "Milan Ahir",
-    position: "Co-Events Director",
+    name: "Tejas Shah",
+    position: "Secretary",
+  },
+  {
+    name: "Shrawani Pradhan",
+    position: "Outreach Director",
+  },
+  {
+    name: "Anika Shah",
+    position: "Events Director",
+  },
+  {
+    name: "Sonu Kamble",
+    position: "Events Director",
   },
   {
     name: "Surya Kuchibhotla",
-    position: "Diwali Head",
+    position: "Events Director",
+  },
+  {
+    name: "Karthik Kumar",
+    position: "Events Director",
   },
 ];
